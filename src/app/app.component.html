@@ -1,0 +1,17 @@
+<html>
+  <!-- Form di login -->
+  <form #f=ngForm>
+    <input type="text" placeholder="username" name="username" ngModel>
+    <input type="password" placeholder="password" name="password" ngModel>
+    <button (click)="login(f)">LOGIN</button>
+    <p>{{logged}}</p>
+  </form>
+  <!-- Tasto per effetuare una chiamata 
+  Se viene schiacciato prima di fare il login dara errore in cosole dato che non si è ancora loggatti e quindi
+  senza token di autenticazione-->
+  <button type="submit" (click)="getAll()">Get all users</button>
+  <!-- stampa di controllo sulla chiamata -->
+  <div *ngFor="let userDTO of listUser">
+    {{userDTO.login}}
+  </div>
+</html>
