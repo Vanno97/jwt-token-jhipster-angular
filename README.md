@@ -1,4 +1,4 @@
-## FILE DA APRIRE
+## FILE DA GUARDARE
 
 src/app/  (tutti i file)
 
